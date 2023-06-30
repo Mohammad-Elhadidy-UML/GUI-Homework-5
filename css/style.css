@@ -1,0 +1,51 @@
+/*
+File: style.css
+GUI Assignment: Creating a Scrabble Board
+Mohammad Elhadidy, UMass Lowell Computer Science, Mohammad_Elhadidy@student.uml.edu
+Description: Created a scrabble board using HTML, Javascript, and CSS. User can move
+draggable letter pieces from rack and place them on board to submit. They can see their
+score and the word created. They can also reset the game.
+Sources: File:  /~heines/91.461/91.461-2015-16f/461-assn/Scrabble_Pieces_AssociativeArray_Jesse.js
+Jesse M. Heines, UMass Lowell Computer Science, heines@cs.uml.edu
+Copyright (c) 2023 by Mohammad. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by ME on June 30, 2023 at 8:00AM
+*/
+#rackContainer { /* Deals with rack on board where pieces are initially held */
+    position: relative;
+}
+
+#rack { /* Deals with rack on board where pieces are initially held */
+    width: 630px; /* Use fixed width */
+    height: auto;
+}
+
+.rack {
+    position: relative;
+    height: 150px; /* Adjusted based on the height of tiles and rack iamge */
+}
+
+.tile { /* Individual tile positioning */
+    width: 65px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+#boardContainer { /* Board of game */
+    position: relative;
+}
+
+#boxes { /* Deals with droppable boxes which are supposed to be positioned on board */
+    position: absolute;
+    top: 32%; /* Adjusted values based on board image */
+    left: 71%;
+    transform: translate(-50%, -50%);
+}
+
+.box {
+    width: 75px;
+    height: 70px;
+    border: 1px solid red; /* View droppable box area */
+    position: relative;
+}
